@@ -11,6 +11,7 @@ public class GameOverScreen : MonoBehaviour
     [SerializeField] private Button _restartButton;
     [SerializeField] private Button _exitButton;
     [SerializeField] private Player _player;
+    
 
     private CanvasGroup _gameOverGroup;
 
@@ -32,6 +33,8 @@ public class GameOverScreen : MonoBehaviour
     {
         _gameOverGroup = GetComponent<CanvasGroup>();
         _gameOverGroup.alpha = 0;
+        
+       
     }
 
     private void OnDied()
@@ -51,5 +54,4 @@ public class GameOverScreen : MonoBehaviour
         Application.Quit();
     }
 
-  
 }
