@@ -41,6 +41,7 @@ public class GameOverScreen : MonoBehaviour
     {
         _gameOverGroup.alpha = 1;
         Time.timeScale = 0;             //остановка времени во всей игре
+
     }
 
     private void OnRestartButtonClick()
